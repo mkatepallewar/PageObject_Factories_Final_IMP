@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30037" started-at="2020-01-06T15:25:40 IST" finished-at="2020-01-06T15:26:10 IST">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="30037" started-at="2020-01-06T15:25:40 IST" finished-at="2020-01-06T15:26:10 IST">
+      <class name="com.w2a.zoho.rough.LoginTest">
+        <test-method status="PASS" signature="setUpFreameWork()[pri:0, instance:com.w2a.zoho.rough.LoginTest@51b7e5df]" name="setUpFreameWork" is-config="true" duration-ms="19" started-at="2020-01-06T15:25:40 IST" finished-at="2020-01-06T15:25:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFreameWork -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.w2a.zoho.rough.LoginTest@51b7e5df]" name="loginTest" duration-ms="12592" started-at="2020-01-06T15:25:41 IST" data-provider="masterDP" finished-at="2020-01-06T15:25:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{browser=chrome, password=Password_1234, Runmode=Y, username=mp_apr80@outlook.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.zoho.rough.LoginTest@51b7e5df]" name="tearDown" is-config="true" duration-ms="821" started-at="2020-01-06T15:25:53 IST" finished-at="2020-01-06T15:25:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.w2a.zoho.rough.LoginTest@51b7e5df]" name="loginTest" duration-ms="13854" started-at="2020-01-06T15:25:54 IST" data-provider="masterDP" finished-at="2020-01-06T15:26:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{browser=firefox, password=Password_1234, Runmode=Y, username=manishtest006@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.zoho.rough.LoginTest@51b7e5df]" name="tearDown" is-config="true" duration-ms="2331" started-at="2020-01-06T15:26:08 IST" finished-at="2020-01-06T15:26:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.zoho.rough.LoginTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

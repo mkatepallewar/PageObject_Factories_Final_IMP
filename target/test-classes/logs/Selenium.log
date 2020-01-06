@@ -1,0 +1,4 @@
+INFO	2020-01-06 22:33:38,698	0	com.w2a.zoho.testcases.BaseTest	[main]	Configuration File Loaded!!!
+INFO	2020-01-06 22:33:42,336	3638	com.w2a.zoho.testcases.BaseTest	[TestNG-tests-1]	Chrome Launched!!!
+INFO	2020-01-06 22:33:42,821	4123	com.w2a.zoho.testcases.BaseTest	[TestNG-tests-2]	Chrome Launched!!!
+INFO	2020-01-06 22:34:06,692	27994	com.w2a.zoho.testcases.BaseTest	[TestNG-tests-1]	Firefox Launched!!!

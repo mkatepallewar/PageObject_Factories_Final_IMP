@@ -1,0 +1,17 @@
+com\w2a\zoho\PageObjects\ZohoCRMPage.class
+com\w2a\zoho\utilities\DataProviders.class
+com\w2a\zoho\utilities\DataUtil.class
+com\w2a\zoho\PageObjects\ZohoCliqPage.class
+com\w2a\zoho\PageObjects\ZohoCreatorPage.class
+com\w2a\zoho\PageObjects\ZohoMailPage.class
+com\w2a\zoho\PageObjects\BasePage.class
+com\w2a\zoho\extentListners\ExtentListeners.class
+com\w2a\zoho\PageObjects\ZohoHomePage.class
+com\w2a\zoho\utilities\ExcelReader.class
+com\w2a\zoho\extentListners\ExtentManager.class
+com\w2a\zoho\PageObjects\ZohoCampaignPage.class
+com\w2a\zoho\PageObjects\ZohoLoginPage.class
+com\w2a\zoho\utilities\DriverFactory.class
+com\w2a\zoho\PageObjects\ZohoAppPage.class
+com\w2a\zoho\utilities\Constants.class
+com\w2a\zoho\utilities\DriverManager.class

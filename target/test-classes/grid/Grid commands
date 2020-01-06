@@ -1,0 +1,31 @@
+
+Selenium Hub:
+
+1. download Selenium-server-standalone exe from selenium HQ site
+2. HUB:
+	to run hub use command: java -jar selenium-server-standalone-3.141.59.jar -role hub  -- this will run hub server on port 4444. to access the console. type mentioned url: http:// <machineIP>:4444
+
+3. Node:
+	to run node against the mentioned hub use command from different machine:
+	1. java -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://<HubMachinIP>:4444/grid/register -port 5555 
+		This will run register node to hub and node would be running on 5555 port. This will support 5 instances of chorme, iexplore and firefox
+	2. if you want customization on running browser instances - use below command.
+		java -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 5555 -browser browserName=firefox -browser browserName=iexplore -browser browserName=chrome,maxInstances=3
+
+		this will run 1 instance of iexplorer and firefox and 3 instances of chrome
+	3. If you want customization on cocurrent run, use command
+		java -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 5555 -browser browserName=firefox -browser browserName=iexplore -browser browserName=chrome,maxInstances=3 -maxSession 4
+
+Setting chrome and IE drivers
+
+command to run nodes on port 666
+java -Dwebdriver.chrome.driver=C:\Users\Manish_Katepallewar\eclipse-workspace\CucumberPageObjects\src\test\resources\executables\chromedriver.exe -Dwebdriver.ie.driver=C:\Users\Manish_Katepallewar\eclipse-workspace\CucumberPageObjects\src\test\resources\executables\IEDriverServer.exe -Dwebdriver.gecko.driver=C:\Users\Manish_Katepallewar\eclipse-workspace\CucumberPageObjects\src\test\resources\executables\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 6666 -browser browserName=firefox,maxInstances=3 -browser browserName=iexplore -browser browserName=chrome,maxInstances=3
+
+command to run nodes on port 777
+java -Dwebdriver.chrome.driver=C:\Users\Manish_Katepallewar\eclipse-workspace\CucumberPageObjects\src\test\resources\executables\chromedriver.exe -Dwebdriver.ie.driver=C:\Users\Manish_Katepallewar\eclipse-workspace\CucumberPageObjects\src\test\resources\executables\IEDriverServer.exe -Dwebdriver.gecko.driver=C:\Users\Manish_Katepallewar\eclipse-workspace\CucumberPageObjects\src\test\resources\executables\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 7777 -browser browserName=firefox,maxInstances=3 -browser browserName=iexplore -browser browserName=chrome,maxInstances=3
+
+
+created batch file instead of command which accept json
+1. hub.bat - will create create hub
+2. node1 and node2 bat file will create instances of firefox and chrome node
+
